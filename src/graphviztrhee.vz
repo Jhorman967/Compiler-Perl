@@ -1,0 +1,63 @@
+digraph G {
+	9[label=a]
+	8[label= var_type]
+	8->9
+	11[label= "="]
+	10[label= assign_type]
+	10->11
+	13[label=2]
+	12[label= datatype_expression]
+	12->13
+	7[label= statement_var_assignment]
+	7->8
+	7->10
+	7->12
+	6[label= statement_var]
+	6->7
+	5[label= declaration_statement]
+	5->6
+	4[label= program_declaration]
+	4->5
+	18[label=b]
+	17[label= var_type]
+	17->18
+	20[label= "="]
+	19[label= assign_type]
+	19->20
+	22[label=3]
+	21[label= datatype_expression]
+	21->22
+	16[label= statement_var_assignment]
+	16->17
+	16->19
+	16->21
+	15[label= statement_var]
+	15->16
+	14[label= declaration_statement]
+	14->15
+	3[label= program_declaration_list]
+	3->4
+	3->14
+	27[label=c]
+	26[label= var_type]
+	26->27
+	29[label= "="]
+	28[label= assign_type]
+	28->29
+	31[label="csaa"]
+	30[label= datatype_expression]
+	30->31
+	25[label= statement_var_assignment]
+	25->26
+	25->28
+	25->30
+	24[label= statement_var]
+	24->25
+	23[label= declaration_statement]
+	23->24
+	2[label= program_declaration_list]
+	2->3
+	2->23
+	1[label= program]
+	1->2
+	}
